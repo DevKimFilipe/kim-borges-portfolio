@@ -1,7 +1,5 @@
 /* =====================================================================
-   PORTFÓLIO KIM BORGES — ESTILO
-   Direção: grafite morno + accent "brasa" (referência ao projeto
-   Chama Fácil), tipografia Sora (display) + Inter (corpo).
+   PORTFÓLIO KIM BORGES — 
    ===================================================================== */
 
 :root {
@@ -399,7 +397,13 @@ nav ul {
 
 /* ---------------------------------------------------------------------
    PORTFÓLIO
-   --------------------------------------------------------------------- */
+   ---------------------------------------------------------------------
+   CORREÇÃO: estava "repeat(3, minmax(220px, 1fr))", que força sempre
+   3 colunas fixas mesmo quando não há espaço suficiente — é isso que
+   fazia o 3º card "sobrar" sozinho e desalinhado em telas menores.
+   Com "auto-fit" o navegador calcula quantas colunas cabem de fato
+   (3 em tela larga, 2, ou 1 em tela estreita) e redistribui os cards
+   de forma equilibrada, sem deixar nenhum desalinhado. */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -442,6 +446,20 @@ nav ul {
   font-family: var(--font-display);
   font-size: 1.25rem;
   margin: .6rem 0 .7rem;
+}
+
+/* O título do card agora contém um link (<a>) clicável para o projeto
+   publicado. Sem esta regra, o link herdaria sublinhado/azul do
+   navegador; aqui ele mantém a aparência do título e só reage no
+   hover, sinalizando que é clicável sem perder o visual do card. */
+.card h3 a {
+  color: var(--ink);
+  text-decoration: none;
+  transition: color .25s;
+}
+.card h3 a:hover {
+  color: var(--ember);
+  text-decoration: underline;
 }
 
 .card p { color: var(--muted); font-size: .94rem; margin-bottom: 1.2rem; }
