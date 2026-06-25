@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kim Borges — Portfólio</title>
+    <meta name="description" content="Portfólio de Kim Borges, estudante de Engenharia de Software com foco em desenvolvimento web, IA e automação.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============== CABEÇALHO / NAVEGAÇÃO FIXA ============== -->
+    <header>
+        <div class="header__inner">
+            <a href="#topo" class="logo">Kim<span class="logo__ponto">.</span></a>
+
+            <nav>
+                <ul id="navLista">
+                    <li><a href="#sobre" class="nav-link" data-secao="sobre">Sobre mim</a></li>
+                    <li><a href="#formacao" class="nav-link" data-secao="formacao">Formação</a></li>
+                    <li><a href="#portfolio" class="nav-link" data-secao="portfolio">Portfólio</a></li>
+                    <li><a href="#contato" class="nav-link" data-secao="contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__acoes">
+                <button id="themeButton" type="button" aria-label="Alternar tema claro/escuro">
+                    <span id="themeIcone" aria-hidden="true">☾</span>
+                </button>
+                <button id="menuButton" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLista">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="topo">
+
+        <!-- ============== HERO ============== -->
+        <section class="hero">
+            <div class="hero__fundo" aria-hidden="true"></div>
+            <div class="hero__conteudo">
+                <p class="eyebrow">Portfólio &amp; currículo</p>
+                <h1 class="hero__nome">Kim Borges</h1>
+                <p class="hero__cargo">Estudante de Engenharia de Software</p>
+                <p class="hero__bio">
+                    Construo interfaces, automações e ideias com a mesma curiosidade de quem
+                    está sempre testando o próximo projeto. Foco em desenvolvimento web,
+                    inteligência artificial e automação de processos — com os olhos postos
+                    numa carreira internacional em tecnologia.
+                </p>
+                <div class="hero__acoes">
+                    <a href="#portfolio" class="botao botao--cheio">Ver projetos</a>
+                    <a href="#contato" class="botao botao--linha">Falar comigo</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============== SOBRE MIM ============== -->
+        <section id="sobre" class="secao">
+            <div class="secao__cabecalho">
+                <p class="eyebrow">01 — quem sou eu</p>
+                <h2>Sobre mim</h2>
+            </div>
+
+            <div class="sobre__grade">
+                <div class="sobre__texto">
+                    <p>
+                        Meu nome é Kim Borges e sou estudante de Engenharia de Software na
+                        UNINTER. Tenho grande interesse por tecnologia, desenvolvimento web,
+                        inteligência artificial, automação de processos e empreendedorismo
+                        digital.
+                    </p>
+                    <p>
+                        Meu objetivo é construir uma carreira internacional na área de
+                        tecnologia, trabalhando com desenvolvimento de software e soluções
+                        digitais que realmente facilitem a vida de quem as usa.
+                    </p>
+                </div>
+
+                <div class="hobbies">
+                    <h3>Hobbies &amp; interesses</h3>
+                    <ul class="hobbies__lista">
+                        <li><span aria-hidden="true">📚</span>Leitura</li>
+                        <li><span aria-hidden="true">💻</span>Estudo de tecnologia</li>
+                        <li><span aria-hidden="true">🌱</span>Desenvolvimento pessoal</li>
+                        <li><span aria-hidden="true">🌍</span>Aprender idiomas</li>
+                        <li><span aria-hidden="true">✨</span>Criação de projetos digitais</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============== FORMAÇÃO ============== -->
+        <section id="formacao" class="secao secao--alt">
+            <div class="secao__cabecalho">
+                <p class="eyebrow">02 — trajetória</p>
+                <h2>Formação</h2>
+            </div>
+
+            <div class="formacao__grade">
+                <div class="formacao__bloco">
+                    <h3>Graduação</h3>
+                    <div class="formacao__item">
+                        <span class="formacao__tag">Em andamento</span>
+                        <p class="formacao__nome">Engenharia de Software</p>
+                        <p class="formacao__instituicao">Centro Universitário UNINTER</p>
+                    </div>
+                </div>
+
+                <div class="formacao__bloco">
+                    <h3>Cursos</h3>
+                    <ul class="lista-chips">
+                        <li>HTML5 e CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Git e GitHub</li>
+                        <li>Fundamentos da Programação</li>
+                    </ul>
+                </div>
+
+                <div class="formacao__bloco">
+                    <h3>Idiomas</h3>
+                    <div class="idioma">
+                        <div class="idioma__topo"><span>Português</span><span>Nativo</span></div>
+                        <div class="idioma__trilha"><div class="idioma__progresso" data-nivel="100"></div></div>
+                    </div>
+                    <div class="idioma">
+                        <div class="idioma__topo"><span>Inglês</span><span>Intermediário</span></div>
+                        <div class="idioma__trilha"><div class="idioma__progresso" data-nivel="65"></div></div>
+                    </div>
+                    <div class="idioma">
+                        <div class="idioma__topo"><span>Alemão</span><span>Em aprendizado</span></div>
+                        <div class="idioma__trilha"><div class="idioma__progresso" data-nivel="20"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============== PORTFÓLIO ============== -->
+        <section id="portfolio" class="secao">
+            <div class="secao__cabecalho">
+                <p class="eyebrow">03 — projetos</p>
+                <h2>Portfólio</h2>
+            </div>
+
+            <div class="cards">
+                <article class="card">
+                    <span class="card__numero">01</span>
+                    <h3>Chama Fácil</h3>
+                    <p>
+                        Protótipo desenvolvido no Figma para auxiliar idosos na utilização
+                        de aplicativos de transporte, com foco em acessibilidade e
+                        simplicidade de navegação.
+                    </p>
+                    <span class="card__tag">UX · Figma</span>
+                </article>
+
+                <article class="card">
+                    <span class="card__numero">02</span>
+                    <h3>Cronograma de Estudos</h3>
+                    <p>
+                        Projeto desenvolvido utilizando HTML e CSS para organização de
+                        estudos, com visualização clara de tarefas e prazos.
+                    </p>
+                    <span class="card__tag">HTML · CSS</span>
+                </article>
+
+                <article class="card">
+                    <span class="card__numero">03</span>
+                    <h3>Projetos Acadêmicos</h3>
+                    <p>
+                        Repositório contendo atividades e projetos realizados durante a
+                        graduação, documentando minha evolução técnica.
+                    </p>
+                    <span class="card__tag">GitHub</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- ============== CONTATO ============== -->
+        <section id="contato" class="secao secao--alt">
+            <div class="secao__cabecalho">
+                <p class="eyebrow">04 — vamos conversar</p>
+                <h2>Contato</h2>
+            </div>
+
+            <form id="contactForm" class="formulario" novalidate>
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Seu nome">
+                    <span class="campo__erro" id="erroNome"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="seu@email.com">
+                    <span class="campo__erro" id="erroEmail"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" placeholder="Digite sua mensagem"></textarea>
+                    <span class="campo__erro" id="erroMensagem"></span>
+                </div>
+
+                <button type="submit" class="botao botao--cheio">Enviar mensagem</button>
+                <p id="resultado" role="status"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© <span id="anoAtual">2026</span> Kim Borges. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
